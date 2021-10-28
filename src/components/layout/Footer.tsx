@@ -1,15 +1,22 @@
-import { Flex, Link, Text } from "@chakra-ui/react";
+import { Box, Flex, Link, Text } from "@chakra-ui/react";
+
+import QDIcon from "../Icons/LogoIcon";
 
 const Footer = () => {
   return (
-    <Flex as="footer" width="full" align="center">
-      <Text>
-        {new Date().getFullYear()} -{" "}
-        <Link href="https://sznm.dev" isExternal>
-          sznm.dev
-        </Link>
-      </Text>
-    </Flex>
+    <Box as="footer" width="full" alignContent="center" pt="8" pb="12">
+      <Flex alignItems="center" justifyContent="center">
+        <QDIcon />
+        <Text ml="4">
+          <Link
+            href="https://showcase.ethglobal.com/hackfs2021/discovery"
+            isExternal
+          >
+            dCompass 2021
+          </Link>
+        </Text>
+      </Flex>
+    </Box>
   );
 };
 

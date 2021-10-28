@@ -1,15 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
+import { customTheme } from "dapper-ui";
 
-import colors from "./colors";
-import Button from "./components/button";
-import fonts from "./fonts";
+const theme = extendTheme(customTheme);
 
-const customTheme = extendTheme({
-  fonts,
-  colors,
-  components: {
-    Button,
-  },
-});
-
-export default customTheme;
+export default theme;
